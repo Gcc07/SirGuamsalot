@@ -1,0 +1,220 @@
+/* Color Palette:
+VERY Light: #EBC35C;
+Light Shades: #E1A445;
+Light Accent: #669182;
+Main Brand Color: #CD6F89;
+Dark Accent: #555182;
+Dark Shades: #182238;
+*/
+/* The below code creates variables that are referenced later.*/
+:root {
+    --header-outer-height: 110px;
+    --header-inner-height: 70px;
+    --header-height-difference: calc(var(--header-outer-height) - var(--header-inner-height));
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+    background-color: #182238;
+    overflow: visible;
+    margin: 0px;
+}
+h1 {
+    font-weight: bolder;
+    color: #EBC35C;
+}
+h2 {
+    color: #EBC35C;
+}
+p {
+    font-weight: normal;
+    color: #E1A445;
+}
+ol {
+    color: #EBC35C;
+}
+ul {
+    font-weight: bolder;
+    color: #EBC35C;
+}
+a {
+    color: #669182;
+}
+:visited {
+    color: #669182;
+}
+header {
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+.name {
+    display: inline-block;
+    color: #EBC35C;
+    font-size: 70px;
+    margin: 10px;;
+}
+.image {
+    display: inline-block;
+    border-radius: 120%;
+    width: 400px;
+}
+.responsive-wrapper {
+    width: 90%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/* Sticky header */
+.header-outer {
+   /* Make it stick */
+    height: var(--header-outer-height);
+    position: sticky;
+    top: calc(var(--header-height-difference) * -1);
+   /* Multiply by -1 to get a negative value */
+    display: flex;
+    align-items: center;
+   /* Other */
+   background-color: #182238;
+   box-shadow: 0 2px 1px 0 #EBC35C;
+}
+.header-inner {
+   /* Make it stick */
+    height: var(--header-inner-height);
+    position: sticky;
+    top: 0;
+   /* Other */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+}
+.header-navigation {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header-navigation a, .header-navigation button {
+    text-decoration: none; 
+    -moz-text-decoration-line: none;
+    font-size: 1.725rem;
+    color: #EBC35C;
+    margin-left: 1.75rem;
+    position: relative;
+    font-weight: 500;
+}
+.header-navigation a:hover::after, .header-navigation button:hover::after {
+    transform: scalex(1);
+}
+.header-navigation a::after, .header-navigation button::after {
+    transition: 1s ease;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: scalex(0);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+/* .column{
+    float: left;
+    width: 33%;
+}
+.card{
+    border-style: double;
+    border: 3px #EBC35C;
+    background-color: #182238;
+    border-radius: 20spx;
+    margin: 2px;
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+} */
+
+.small-info{
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: stretch;
+    background-color: #283757;
+    padding: 10px;
+    box-shadow: 0 2px 1px 0 #E1A445;
+}
+
+.container section {
+    width: 33%;
+}
+
+.box{
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(40,55,87,1) 99%, rgba(235,195,92,1) 100%);
+    background-color: #182238;
+    color: #555182;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.box2{
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(40,55,87,1) 99%, rgb(212, 140, 31) 100%);
+    background-color: #182238;
+    color: #555182;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#ContactForm, #ContactInfo, #Interests{
+    justify-items: center;
+}
+button {
+    background-color: #EBC35C;
+    color: #283757;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 2px;
+}
+
+button:hover {
+    background-color: #28375700;
+    color: #EBC35C;
+    transform: scale(1.1); /* Expands button to 110% of its original size */
+}
+
+
+
+/*
+body {
+background-color: #304040;
+}
+h1 {
+color: #e5f7dc;
+}
+h2 {
+color: #b6c0b1;
+}
+p {
+color: #73a194;
+}
+ol {
+color: #73a194;
+}
+ul {
+color: #73a194;
+}
+a {
+color: #ff6c78;
+}
+:visited {
+color: #e75c96;
+}
+*/

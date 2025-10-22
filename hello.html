@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class = "header-outer">
+        <div class="header-inner responsive-wrapper">
+            <nav class ="header-navigation">
+                <a href="index.html">Home Page</a>
+                <a href="contact.html">Contact Information</a>
+                <a href="interests.html">Interests</a>
+                <a href="hello.html">Hello</a>
+                <a href="tictactoe.html">Tic-Tac-Toe</a>
+            </nav>
+        </div>
+    </div>
+    <form>
+        <label for="operandOne">x:</label>
+        <input name="operandOne" id="operandOne" value="10">
+        
+        <label for="total">Result:</label>
+        <div name="total" id="total"></div>
+    </form>
+    <py-script>
+        input_box = Element("operandOne")
+        operandOne = float(input_box.value)
+        result = Element("total")
+        result.write("Hello! The input says: " + str(operandOne))
+    </py-script>
+</body>
+</html>
