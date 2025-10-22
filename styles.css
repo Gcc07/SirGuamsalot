@@ -1,10 +1,11 @@
-/* Color Palette:
-VERY Light: #EBC35C;
-Light Shades: #E1A445;
-Light Accent: #669182;
-Main Brand Color: #CD6F89;
-Dark Accent: #555182;
-Dark Shades: #182238;
+/* Updated Color Palette - Warmer, more cohesive:
+Primary Gold: #D4A574;
+Secondary Gold: #C49660;
+Warm Accent: #8B7355;
+Main Brand: #B8860B;
+Dark Accent: #4A4A4A;
+Dark Background: #2C2C2C;
+Warm Background: #3A3A3A;
 */
 /* The below code creates variables that are referenced later.*/
 :root {
@@ -17,33 +18,33 @@ Dark Shades: #182238;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body {
-    background-color: #182238;
+    background-color: #1F1F1F;
     overflow: visible;
     margin: 0px;
 }
 h1 {
     font-weight: bolder;
-    color: #EBC35C;
+    color: #D4A574;
 }
 h2 {
-    color: #EBC35C;
+    color: #D4A574;
 }
 p {
     font-weight: normal;
-    color: #E1A445;
+    color: #C49660;
 }
 ol {
-    color: #EBC35C;
+    color: #D4A574;
 }
 ul {
     font-weight: bolder;
-    color: #EBC35C;
+    color: #D4A574;
 }
 a {
-    color: #669182;
+    color: #8B7355;
 }
 :visited {
-    color: #669182;
+    color: #8B7355;
 }
 header {
     display: flex;
@@ -52,7 +53,7 @@ header {
 }
 .name {
     display: inline-block;
-    color: #EBC35C;
+    color: #D4A574;
     font-size: 70px;
     margin: 10px;;
 }
@@ -78,8 +79,8 @@ header {
     display: flex;
     align-items: center;
    /* Other */
-   background-color: #182238;
-   box-shadow: 0 2px 1px 0 #EBC35C;
+   background-color: #1F1F1F;
+   box-shadow: 0 2px 1px 0 #D4A574;
 }
 .header-inner {
    /* Make it stick */
@@ -100,7 +101,7 @@ header {
     text-decoration: none; 
     -moz-text-decoration-line: none;
     font-size: 1.725rem;
-    color: #EBC35C;
+    color: #D4A574;
     margin-left: 1.75rem;
     position: relative;
     font-weight: 500;
@@ -145,9 +146,9 @@ header {
 .container{
     display: flex;
     align-items: stretch;
-    background-color: #283757;
+    background-color: #2A2A2A;
     padding: 10px;
-    box-shadow: 0 2px 1px 0 #E1A445;
+    box-shadow: 0 2px 1px 0 #C49660;
 }
 
 .container section {
@@ -155,17 +156,17 @@ header {
 }
 
 .box{
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(40,55,87,1) 99%, rgba(235,195,92,1) 100%);
-    background-color: #182238;
-    color: #555182;
+    background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(42,42,42,1) 99%, rgba(212,165,116,1) 100%);
+    background-color: #1F1F1F;
+    color: #C49660;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
 }
 .box2{
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(40,55,87,1) 99%, rgb(212, 140, 31) 100%);
-    background-color: #182238;
-    color: #555182;
+    background: linear-gradient(180deg, rgba(31,31,31,1) 0%, rgba(42,42,42,1) 99%, rgba(196,150,96,1) 100%);
+    background-color: #1F1F1F;
+    color: #C49660;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
@@ -175,8 +176,8 @@ header {
     justify-items: center;
 }
 button {
-    background-color: #EBC35C;
-    color: #283757;
+    background-color: #D4A574;
+    color: #2C2C2C;
     border: none;
     cursor: pointer;
     font-size: 16px;
@@ -185,8 +186,8 @@ button {
 }
 
 button:hover {
-    background-color: #28375700;
-    color: #EBC35C;
+    background-color: #C49660;
+    color: #2C2C2C;
     transform: scale(1.1); /* Expands button to 110% of its original size */
 }
 
