@@ -12,7 +12,7 @@
             <nav class ="header-navigation">
                 <a href="index.html">Home Page</a>
                 <a href="contact.html">Contact Information</a>
-                <a href="portfolio.html">Art & Music</a>
+                <a href="portfolio.html">Portfolio</a>
             </nav>
         </div>
     </div>
@@ -53,5 +53,13 @@
     <footer>
         <p class="Warning" style="text-align: center;padding-bottom: 25px; ">Contact me: gabecardenasnc@gmail.com</p>
     </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+            const maxScroll = 80;
+            const opacity = Math.min(scrollPosition / maxScroll, 0.9);
+            document.body.style.setProperty('--vignette-opacity', opacity);
+        });
+    </script>
 </body>
 </html>

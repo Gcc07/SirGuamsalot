@@ -3,6 +3,7 @@
     <head>
         <title>Portfolio</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="assets/js/art-scroll.js" defer></script>
     </head>
     <body>
         <header>
@@ -13,21 +14,60 @@
                 <nav class ="header-navigation">
                     <a href="index.html">Home Page</a>
                     <a href="contact.html">Contact Information</a>
-                    <a href="portfolio.html">Art & Music</a>
+                    <a href="portfolio.html">Portfolio</a>
                 </nav>
             </div>
         </div>
         <main>
-        <ul id="Portfolio" class = "small-info box" >
-            <li><p>Project 1: [Project Description]</p></li>
-            <li><p>Project 2: [Project Description]</p></li>
-            <li><p>Project 3: [Project Description]</p></li>
-            <li><p>Project 4: [Project Description]</p></li>
-            <li><p>Project 5: [Project Description]</p></li>
-        </ul>
+        <section class="portfolio-section">
+            <h1><img src="assets/Graphics/Portfolio.png" alt="Portfolio" class="image_text"></h1>
+            <h2>Pixel Art</h2>
+            <div class="art-scroll-container">
+                <div class="art-scroll-wrapper">
+                    <div class="art-tab box">
+                        <img src="assets/Art/Ambienctce.png" alt="Ambience" class="art-tab-image">
+                        <div class="art-tab-content">
+                            <h3><i>Ambient(ce)</i></h3>
+                            <p>This one is a little "experimental". (More abstract then what I usually do.) Lots of shading nonsensical materials.</p>
+                        </div>
+                    </div>
+                    <div class="art-tab box">
+                        <img src="assets/Art/Final Battle Reprise.png" alt="Final Battle Reprise" class="art-tab-image">
+                        <div class="art-tab-content">
+                            <h3><i>You and Susie</i></h3>
+                            <p>I don't usually draw characters that aren't from my imagination, but I felt an urge to sprite my own interpretation of Kris and Susie. (This definitely doesn't happen in game.) Absolute Cinema.</p>
+                        </div>
+                    </div>
+                    <div class="art-tab box">
+                        <img src="assets/Art/Moon Game Concepts.png" alt="Moon Game Concepts" class="art-tab-image">
+                        <div class="art-tab-content">
+                            <h3>Moon Game Concept Art</h3>
+                            <p>These art just assets for a Moon survival game I never made. I take alot of inspiration from the games I've played, (Subnautica, No Man's Sky) which is probably visible in the art I make... Maybe not the style but you get the point.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         </main>
         <footer>
             <p class="Warning" style="text-align: center;padding-bottom: 25px;">Contact me: gabecardenasnc@gmail.com</p>
         </footer>
+        
+        <!-- Full Screen Image Modal -->
+        <div id="imageModal" class="image-modal">
+            <img src="assets/Graphics/Get Me Out.png" alt="Get me out" class="modal-close">
+            <img class="modal-image" id="modalImage" src="" alt="">
+            <div class="modal-caption" id="modalCaption"></div>
+        </div>
+        
+        <script src="assets/js/image-modal.js" defer></script>
+        <script>
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+            const maxScroll = 80;
+            const opacity = Math.min(scrollPosition / maxScroll, 0.9);
+            document.body.style.setProperty('--vignette-opacity', opacity);
+        });
+        </script>
     </body>
 </html>

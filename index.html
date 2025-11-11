@@ -14,7 +14,7 @@
             <nav class ="header-navigation">
                 <a href="index.html">Home Page</a>
                 <a href="contact.html">Contact Information</a>
-                <a href="portfolio.html">Interests</a>
+                <a href="portfolio.html">Portfolio</a>
             </nav>
         </div>
     </div>
@@ -57,15 +57,11 @@
     <footer>
         <p class="Warning" style="text-align: center;padding-bottom: 50px;margin: 50px;">Contact me: gabecardenasnc@gmail.com</p>
     </footer>
-    <div style="height: 800px; padding: 20px; color: #D4A574;">
-        <h2>Scroll down to see the vignette effect appear at the top!</h2>
-        <p style="color: #C49660;">Keep scrolling...</p>
-    </div>
     <script>
         window.addEventListener('scroll', function() {
             const scrollPosition = window.scrollY;
-            const maxScroll = 50;
-            const opacity = Math.min(scrollPosition / maxScroll, 1);
+            const maxScroll = 80;
+            const opacity = Math.min(scrollPosition / maxScroll, 0.9);
             document.body.style.setProperty('--vignette-opacity', opacity);
         });
     </script>
